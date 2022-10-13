@@ -9,7 +9,7 @@ Have the function CodelandUsernameValidation(str) take the str parameter being p
 If the username is valid then your program should return the string true, otherwise return the string false. */
 
 function CodelandUsernameValidation(str) { 
-    if( (str.length >= 4 && str.length <= 25) && (str[0].toLowerCase() !== str[0].toUpperCase()) && (/^\w+$/.test(str) == true) && (str.endsWith('_') == false) ){
+    if((str.length >= 4 && str.length <= 25) && (str[0].toLowerCase() !== str[0].toUpperCase()) && (/^\w+$/.test(str) == true) && (str.endsWith('_') == false)){
       str = true;
       console.log(str);
       return str;
@@ -20,6 +20,4 @@ function CodelandUsernameValidation(str) {
         return str;   
     }
 }
-
-
 CodelandUsernameValidation('teste_');
